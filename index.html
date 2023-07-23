@@ -1,0 +1,304 @@
+<!DOCTYPE HTML>
+<head>
+  <meta charset="UTF-8">
+	<title>PSXAxolotlList</title>
+  <link rel="shortcut icon" type="image/x-icon" href="Images/Titanic-Axolotl.webp"/>
+  <link rel="stylesheet" type="text/css" href="CSS/style.css">
+  <link rel="stylesheet" type="text/css" href="CSS/outlines.css"> 
+  <link rel="stylesheet" type="text/css" href="CSS/raretes.css"> 
+  <link href='https://fonts.googleapis.com/css?family=Fredoka One' rel='stylesheet'>
+</head>
+<body>	
+
+  <header>
+    <img src="Images/icon-axolotl.jpg" alt="IconPSXAxolotl" class="logo">
+    <p>Axolotls list from Pet Simulator X</p>
+  </header>
+
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search Axolotls..." onkeydown="checkEnter(event)">
+    <button onclick="filterAxolotls()">Search</button>
+  </div>
+
+  <div class="axolotl-list">
+    <a href="Pages/axolotl.html" class="axolotl-item basic">
+      <img src="Images/PSX_Axolotl.webp" alt="Axolotl">
+      <div class="axolotl-info">
+        <p class="axolotl-name basic">Axolotl</p>
+        <p class="axolotl-rarity basic">Basic</p>       
+      </div>
+    </a>
+    <a href="Pages/blurred-axolotl.html" class="axolotl-item basic">
+      <img src="Images/blurred-axolotl.png" alt="Blurred_Axolotl">
+      <div class="axolotl-info">
+        <p class="axolotl-name basic">Blurred Axolotl</p>
+        <p class="axolotl-rarity rare">Rare</p>       
+      </div>
+    </a>
+    <a href="Pages/alien.html" class="axolotl-item basic">
+      <img src="Images/Alien_Axolotl.webp" alt="Alien_Axolotl">
+      <div class="axolotl-info">
+        <p class="axolotl-name basic">Alien Axolotl</p>
+        <p class="axolotl-rarity epic">Epic</p>       
+      </div>
+    </a>
+    <a href="Pages/haxolotl.html" class="axolotl-item basic">
+      <img src="Images/haxolotl.webp" alt="Haxolotl">
+      <div class="axolotl-info">
+        <p class="axolotl-name basic">Haxolotl</p>
+        <p class="axolotl-rarity legendary">Legendary</p>       
+      </div>
+    </a>
+    <a href="Pages/camo.html" class="axolotl-item basic">
+      <img src="Images/camo axolotl.webp" alt="Camo_Axolotl">
+      <div class="axolotl-info">
+        <p class="axolotl-name basic">Camo Axolotl</p>
+        <p class="axolotl-rarity basic">Basic</p>       
+      </div>
+    </a>
+    <a href="Pages/chill.html" class="axolotl-item basic">
+      <img src="Images/chill axolotl.webp" alt="Chill_Axolotl">
+      <div class="axolotl-info">
+        <p class="axolotl-name basic">Chill Axolotl</p>
+        <p class="axolotl-rarity basic">Basic</p>       
+      </div>
+    </a>
+    <a href="Pages/lumi.html" class="axolotl-item basic">
+      <img src="Images/lumi axolotl.webp" alt="Lumi_Axolotl">
+      <div class="axolotl-info">
+        <p class="axolotl-name basic">Lumi Axolotl</p>
+        <p class="axolotl-rarity rare">Rare</p>       
+      </div>
+    </a>
+    <a href="Pages/midnight.html" class="axolotl-item basic">
+      <img src="Images/midnight axolotl.webp" alt="Midnight_Axolotl">
+      <div class="axolotl-info">
+        <p class="axolotl-name basic">Midnight Axolotl</p>
+        <p class="axolotl-rarity epic">Epic</p>       
+      </div>
+    </a>
+    <a href="Pages/storm.html" class="axolotl-item basic">
+      <img src="Images/storm axolotl.webp" alt="Storm_Axolotl">
+      <div class="axolotl-info">
+        <p class="axolotl-name basic">Storm Axolotl</p>
+        <p class="axolotl-rarity legendary">Legendary</p>       
+      </div>
+    </a>
+    <a href="Pages/empyrean.html" class="axolotl-item mythical">
+      <img src="Images/empyrean axolotl.webp" alt="Eperyean_Axolotl">
+      <div class="axolotl-info">
+        <p class="axolotl-name mythical">Empyrean Axolotl</p>
+        <p class="axolotl-rarity mythical">Mythical</p>       
+      </div>
+    </a>
+    <a href="Pages/nature.html" class="axolotl-item basic">
+      <img src="Images/nature axolotl.webp" alt="Nature_Axolotl">
+      <div class="axolotl-info">
+        <p class="axolotl-name basic">Nature Axolotl</p>
+        <p class="axolotl-rarity basic">Basic</p>       
+      </div>
+    </a>
+    <a href="Pages/fancy.html" class="axolotl-item basic">
+      <img src="Images/fancy axolotl.webp" alt="Fancy_Axolotl">
+      <div class="axolotl-info">
+        <p class="axolotl-name basic">Fancy Axolotl</p>
+        <p class="axolotl-rarity basic">Basic</p>       
+      </div>
+    </a>
+    <a href="Pages/axolotuus.html" class="axolotl-item basic">
+      <img src="Images/Axolotuus.webp" alt="Axolotuus">
+      <div class="axolotl-info">
+        <p class="axolotl-name basic">Axolotuus</p>
+        <p class="axolotl-rarity rare">Rare</p>       
+      </div>
+    </a>
+    <a href="Pages/hydra.html" class="axolotl-item basic">
+      <img src="Images/hydra axolotl.webp" alt="Hydra_Axolotl">
+      <div class="axolotl-info">
+        <p class="axolotl-name basic">Hydra Axolotl</p>
+        <p class="axolotl-rarity epic">Epic</p>       
+      </div>
+    </a>
+    <a href="Pages/astral.html" class="axolotl-item basic">
+      <img src="Images/Astral_Axolotl_29.webp" alt="Astral_Axolotl">
+      <div class="axolotl-info">
+        <p class="axolotl-name basic">Astral Axolotl</p>
+        <p class="axolotl-rarity legendary">Legendary</p>       
+      </div>
+    </a>
+    <a href="Pages/hellish.html" class="axolotl-item mythical">
+      <img src="Images/hellish axolotl.webp" alt="Hellish_Axolotl">
+      <div class="axolotl-info">
+        <p class="axolotl-name mythical">Hellish Axolotl</p>
+        <p class="axolotl-rarity mythical">Mythical</p>       
+      </div>
+    </a>
+    <a href="Pages/doodle.html" class="axolotl-item basic">
+      <img src="Images/Doodle-Axolotl.webp" alt="Doodle_Axolotl">
+      <div class="axolotl-info">
+        <p class="axolotl-name basic">Doodle Axolotl</p>
+        <p class="axolotl-rarity legendary">Legendary</p>       
+      </div>
+    </a>
+    <a href="Pages/frost.html" class="axolotl-item basic">
+      <img src="Images/Frost_Axolotl.webp" alt="Frost_Axolotl">
+      <div class="axolotl-info">
+        <p class="axolotl-name basic">Frost Axolotl</p>
+        <p class="axolotl-rarity epic">Epic</p>       
+      </div>
+    </a>
+    <a href="Pages/clover.html" class="axolotl-item mythical">
+      <img src="Images/Clover-Axolotl.webp" alt="Clover_Axolotl">
+      <div class="axolotl-info">
+        <p class="axolotl-name mythical">Clover Axolotl</p>
+        <p class="axolotl-rarity mythical">Mythical</p>       
+      </div>
+    </a>
+    <a href="Pages/error.html" class="axolotl-item basic">
+      <img src="Images/Error_Axolotl.webp" alt="Error_Axolotl">
+      <div class="axolotl-info">
+        <p class="axolotl-name basic">Error Axolotl</p>
+        <p class="axolotl-rarity legendary">Legendary</p>       
+      </div>
+    </a>
+    <a href="Pages/party.html" class="axolotl-item basic">
+      <img src="Images/Party-Axolotl.webp" alt="Party_Axolotl">
+      <div class="axolotl-info">
+        <p class="axolotl-name event">Party Axolotl</p>
+        <p class="axolotl-rarity event">Event</p>       
+      </div>
+    </a>
+    <a href="Pages/hparty.html" class="axolotl-item exclusive">
+      <img src="Images/Huge-Party-Axolotl.webp" alt="Huge_Party_Axolotl">
+      <div class="axolotl-info">
+        <p class="axolotl-name exclusive">Huge Party Axolotl</p>
+        <p class="axolotl-rarity exclusive">Exclusive</p>       
+      </div>
+    </a>
+    <a href="Pages/easter.html" class="axolotl-item basic">
+      <img src="Images/Easter-Axolotl.webp" alt="Easter_Axolotl">
+      <div class="axolotl-info">
+        <p class="axolotl-name basic">Easter Axolotl</p>
+        <p class="axolotl-rarity legendary">Legendary</p>       
+      </div>
+    </a>
+    <a href="Pages/hugeaxolotl.html" class="axolotl-item exclusive">
+      <img src="Images/Huge-Axolotl.webp" alt="Huge_Axolotl">
+      <div class="axolotl-info">
+        <p class="axolotl-name exclusive">Huge Axolotl</p>
+        <p class="axolotl-rarity exclusive">Exclusive</p>       
+      </div>
+    </a>
+    <a href="Pages/balloon.html" class="axolotl-item exclusive">
+      <img src="Images/Balloon-Axolotl.png" alt="Balloon_Axolotl">
+      <div class="axolotl-info">
+        <p class="axolotl-name exclusive">Balloon Axolotl</p>
+        <p class="axolotl-rarity exclusive">Exclusive</p>       
+      </div>
+    </a>
+    <a href="Pages/hballoon.html" class="axolotl-item exclusive">
+      <img src="Images/Huge-Balloon-Axolotl.webp" alt="Huge_Balloon_Axolotl">
+      <div class="axolotl-info">
+        <p class="axolotl-name exclusive">Huge Balloon Axolotl</p>
+        <p class="axolotl-rarity exclusive">Exclusive</p>       
+      </div>
+    </a>
+    <a href="Pages/hologram.html" class="axolotl-item exclusive">
+      <img src="Images/Hologram-Axolotl.webp" alt="Hologram_Axolotl">
+      <div class="axolotl-info">
+        <p class="axolotl-name exclusive">Hologram Axolotl</p>
+        <p class="axolotl-rarity exclusive">Exclusive</p>       
+      </div>
+    </a>
+    <a href="Pages/hhologram.html" class="axolotl-item exclusive">
+      <img src="Images/Huge-Hologram-Axolotl.webp" alt="Huge_Hologram_Axolotl">
+      <div class="axolotl-info">
+        <p class="axolotl-name exclusive">Huge Hologram Axolotl</p>
+        <p class="axolotl-rarity exclusive">Exclusive</p>       
+      </div>
+    </a>
+    <a href="Pages/hninja.html" class="axolotl-item exclusive">
+      <img src="Images/Huge-Ninja-Axolotl.webp" alt="Huge_Ninja_Axolotl">
+      <div class="axolotl-info">
+        <p class="axolotl-name exclusive">Huge Ninja Axolotl</p>
+        <p class="axolotl-rarity exclusive">Exclusive</p>       
+      </div>
+    </a>
+    <a href="Pages/hreindeer.html" class="axolotl-item exclusive">
+      <img src="Images/Huge-Reindeer-Axolotl.jpg" alt="Huge_Reindeer_Axolotl">
+      <div class="axolotl-info">
+        <p class="axolotl-name exclusive">Huge Reindeer Axolotl</p>
+        <p class="axolotl-rarity exclusive">Exclusive</p>       
+      </div>
+    </a>
+    <a href="Pages/sombrero.html" class="axolotl-item secret">
+      <img src="Images/Sombrero-Axolotl.webp" alt="Sombrero_Axolotl">
+      <div class="axolotl-info">
+        <p class="axolotl-name secret">Sombrero Axolotl</p>
+        <p class="axolotl-rarity secret">Secret</p>       
+      </div>
+    </a>
+    <a href="Pages/surfboard.html" class="axolotl-item basic">
+      <img src="Images/Surfboard_Axolotl.webp" alt="Surfboard_Axolotl">
+      <div class="axolotl-info">
+        <p class="axolotl-name basic">Surfboard Axolotl</p>
+        <p class="axolotl-rarity legendary">Legendary</p>       
+      </div>
+    </a>
+    <a href="Pages/tiedye.html" class="axolotl-item exclusive">
+      <img src="Images/" alt="Tiedye_Axolotl">
+      <div class="axolotl-info">
+        <p class="axolotl-name exclusive">Tiedye Axolotl</p>
+        <p class="axolotl-rarity exclusive">Exclusive</p>       
+      </div>
+    </a>
+    <a href="Pages/htiedye.html" class="axolotl-item exclusive">
+      <img src="Images/huge-tiedye-axolotl.webp" alt="Huge_Tiedye_Axolotl">
+      <div class="axolotl-info">
+        <p class="axolotl-name exclusive">Huge Tiedye Axolotl</p>
+        <p class="axolotl-rarity exclusive">Exclusive</p>       
+      </div>
+    </a>
+    <a href="Pages/springy.html" class="axolotl-item basic">
+      <img src="Images/" alt="Springy_Axolotl">
+      <div class="axolotl-info">
+        <p class="axolotl-name basic">Springy Axolotl</p>
+        <p class="axolotl-rarity basic">Basic</p>       
+      </div>
+    </a>
+    <a href="Pages/cosmic.html" class="axolotl-item exclusive">
+      <img src="Images/Cosmic_Axolotl.webp" alt="Cosmic_Axolotl">
+      <div class="axolotl-info">
+        <p class="axolotl-name exclusive">Cosmic Axolotl</p>
+        <p class="axolotl-rarity exclusive">Exclusive</p>       
+      </div>
+    </a>
+    <a href="Pages/hcosmic.html" class="axolotl-item exclusive">
+      <img src="Images/Huge_Cosmic_Axolotl.webp" alt="Huge_Cosmic_Axolotl">
+      <div class="axolotl-info">
+        <p class="axolotl-name exclusive">Huge Cosmic Axolotl</p>
+        <p class="axolotl-rarity exclusive">Exclusive</p>       
+      </div>
+    </a>
+    <a href="Pages/titanic.html" class="axolotl-item exclusive">
+      <img src="Images/Titanic-Axolotl.webp" alt="Titanic_Axolotl">
+      <div class="axolotl-info">
+        <p class="axolotl-name exclusive">Titanic Axolotl</p>
+        <p class="axolotl-rarity exclusive">Exclusive</p>       
+      </div>
+    </a>
+
+  </div>
+
+  <div class="no-results" style="display: none;">Aucun résultat trouvé</div>
+
+  <footer>
+    <p>This site is a fan creation and is not the official website of Pet Simulator X by Big Games. No revenue will be generated from this site.</p>
+    <p> Creation Date : 22/07/2023</p>
+    <p> Last Update : 23/07/2023</p>
+  </footer>
+
+  <script src="recherche.js"></script>  
+  <script src="click.js"></script>
+
+</body>

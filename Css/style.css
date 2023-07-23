@@ -1,0 +1,230 @@
+body {
+    background-image: linear-gradient(to bottom, #46287F, #0F1258);
+    background-repeat: no-repeat; /* Évite la répétition du dégradé */
+    background-attachment: fixed; /* Fixe le dégradé au viewport */
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Fredoka One';font-size: 22px; /* Change tout les textes */
+}
+
+
+/* HEADER */
+header {
+    height: 100px;
+    width: 100%;
+
+    background-color: rgb(15, 10, 22);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex; 
+    align-items: center; 
+
+    z-index: 9999;
+}
+
+header p {
+    color: white; 
+    margin: 0; 
+    font-size: 22px; 
+    margin-left: 100px;
+}
+
+.logo {
+    width: 80px; 
+    height: 80px; 
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+
+/* FOOTER*/
+footer {
+    height: 20px;
+    width: 100%;
+
+    background-color: rgb(15, 10, 22);
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    display: flex; 
+    align-items: center; 
+
+    z-index: 9999;
+}
+
+footer p{
+    color: white; 
+    margin: 0; 
+    font-size: 15px; 
+    margin-left: 100px;
+}
+
+
+/* BAR DE RECHERCHE */
+.search-bar {
+    position: fixed;
+    top: 120px; 
+    left: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  .search-bar input[type="text"] {
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  .search-bar button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #429dff;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 5px;
+  }
+  
+
+
+
+/* AXOLOTL LIST */
+.axolotl-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+    margin-bottom: 40px;
+}
+
+.axolotl-item {
+    display: flex;
+    flex: 1;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    
+    transition: transform 0.1s ease-in-out;
+
+    
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.axolotl-item:hover {
+    transform: scale(1.05); /* Grossis la case au survol */
+}
+
+
+.axolotl-item img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.axolotl-info {
+    margin-left: 20px;
+}
+
+.axolotl-info p {
+    margin: 5px 0; 
+}
+
+.axolotl-name.basic{
+    font-size: 24px;
+    font-weight: bold;
+    color: #429dff;
+}
+
+.axolotl-name.mythical{
+    font-size: 24px;
+    font-weight: bold;
+    background: linear-gradient(180deg, #ffd220 0%, #ff3232 100%); 
+    -webkit-background-clip: text;
+    background-clip: text; 
+    color: transparent;
+}
+
+.axolotl-name.event{
+    font-size: 24px;
+    font-weight: bold;
+    background: linear-gradient(180deg, #429dff 20%, #1a66ff 100%); 
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    color: transparent; 
+}
+
+.axolotl-name.exclusive{
+    font-size: 24px;
+    font-weight: bold;
+    background: linear-gradient(180deg, #dc84ff 40%, #be5cfb 100%); 
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    color: transparent; 
+}
+
+.axolotl-name.secret{
+    font-size: 24px;
+    font-weight: bold;
+    background: linear-gradient(180deg, #429dff 0%, #000346 80%);
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    color: transparent; 
+}
+
+.axolotl-item.basic {
+    outline: 5px solid #429dff;
+}
+
+.axolotl-item.mythical {
+    outline: 5px solid #ff781e;
+}
+
+.axolotl-item.exclusive {
+    outline: 5px solid #c572f9;
+}
+
+.axolotl-item.secret {
+    outline: 5px solid #000346;
+}
+
+
+.no-results {
+    color: #fff;
+    left: 20px;
+}
+
+
+/* Add a click animation */
+.axolotl-item.clicked {
+    animation: clickAnimation 0.2s;
+}
+  
+@keyframes clickAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.9);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
